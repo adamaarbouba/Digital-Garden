@@ -28,13 +28,13 @@ The code is organized into separate files for clarity, making the project easier
 ``` Plaintext
 digital-garden/
 ├── config/
-│   └── db.php
-├── inc/
-│   ├── auth_functions.php
-│   ├── theme_functions.php
-│   └── note_functions.php
-├── assets/
-├── database.sql
+│   └── database.php
+├── includes/
+│   ├── auth.php
+│   ├── footer.php
+│   └── header.php
+├── sql/
+│   ├── schema.sql.php
 ├── index.php
 ├── register.php
 ├── login.php
