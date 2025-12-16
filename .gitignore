@@ -1,6 +1,5 @@
 # Node.js
 node_modules/
-public/css/output.css
 
 # MySQL data and logs
 sql/db_data/
