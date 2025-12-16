@@ -346,9 +346,6 @@
   .h-full {
     height: 100%;
   }
-  .min-h-75 {
-    min-height: calc(var(--spacing) * 75);
-  }
   .min-h-\[300px\] {
     min-height: 300px;
   }
