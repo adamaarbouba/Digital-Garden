@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme {
+    --font-AveriaSerifLibre: "Averia Serif Libre", sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+}
