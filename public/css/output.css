@@ -254,6 +254,24 @@
   .z-10 {
     z-index: 10;
   }
+  .container {
+    width: 100%;
+    @media (width >= 40rem) {
+      max-width: 40rem;
+    }
+    @media (width >= 48rem) {
+      max-width: 48rem;
+    }
+    @media (width >= 64rem) {
+      max-width: 64rem;
+    }
+    @media (width >= 80rem) {
+      max-width: 80rem;
+    }
+    @media (width >= 96rem) {
+      max-width: 96rem;
+    }
+  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -352,6 +370,9 @@
   }
   .h-full {
     height: 100%;
+  }
+  .min-h-75 {
+    min-height: calc(var(--spacing) * 75);
   }
   .min-h-\[300px\] {
     min-height: 300px;
