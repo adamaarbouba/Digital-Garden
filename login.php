@@ -11,9 +11,7 @@
 </head>
 
 <body class="bg-[#212224] min-h-screen flex flex-col antialiased selection:bg-[#066839] selection:text-white">
-
     <?php include 'includes/header.php' ?>
-
     <main class="grow flex items-center justify-center p-6 w-full">
 
         <div class="w-full max-w-md bg-[#1D2E28] rounded-3xl shadow-2xl ring-1 ring-white/5 p-8 md:p-10 relative overflow-hidden">
@@ -25,9 +23,7 @@
                     <h1 class="text-3xl font-bold text-gray-100 mb-2">Welcome Back</h1>
                     <p class="text-gray-400 font-light">Enter your garden to continue planting.</p>
                 </div>
-
-                <form action="auth.php" method="POST" class="space-y-6">
-
+                <form action="includes/auth.php" method="POST" class="space-y-6">
                     <div class="space-y-2">
                         <label for="email" class="text-sm font-medium text-gray-300 ml-1">Email Address</label>
                         <div class="relative">
@@ -42,8 +38,8 @@
                                 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#066839] focus:bg-[#212f2a] transition-all duration-300"
                                 placeholder="name@example.com">
                         </div>
+                        <span class="text-red-800 emailWarningMsg hidden">Email Is Not Valid</span>
                     </div>
-
                     <div class="space-y-2">
                         <div class="flex justify-between items-center ml-1">
                             <label for="password" class="text-sm font-medium text-gray-300">Password</label>
@@ -59,14 +55,13 @@
                                 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#066839] focus:bg-[#212f2a] transition-all duration-300"
                                 placeholder="••••••••">
                         </div>
+                        <span class="text-red-800 passwordWarningMsg hidden">Password Is Not Valid</span>
                     </div>
-
                     <button type="submit"
                         class="w-full text-white bg-[#066839] border border-[#0A5C36] font-medium rounded-2xl text-lg px-5 py-4 text-center 
                         shadow-lg shadow-green-900/30 hover:bg-[#08522e] hover:shadow-green-900/50 hover:-translate-y-0.5 transition-all duration-300">
                         Sign In to Garden
                     </button>
-
                     <div class="text-sm font-light text-gray-400 text-center mt-6">
                         Don't have a space yet? <a href="/register.php" class="font-medium text-[#4ade80] hover:underline hover:text-white transition-colors">Create account</a>
                     </div>
@@ -74,9 +69,8 @@
             </div>
         </div>
     </main>
-
     <?php include 'includes/footer.php' ?>
-
+    <script src="public/js/LoginValidation.js"></script>
 </body>
 
 </html>

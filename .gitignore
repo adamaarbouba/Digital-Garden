@@ -1,14 +1,12 @@
-# Node.js
 node_modules/
 
-# MySQL data and logs
-sql/db_data/
+
+sql/db_data
 *.cnf
 *.log
 *.pid
 *.sock
 *.err
 
-# Database files
 *.sqlite
 *.db   
