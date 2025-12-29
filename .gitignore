@@ -1,0 +1,12 @@
+node_modules/
+
+
+sql/db_data
+*.cnf
+*.log
+*.pid
+*.sock
+*.err
+
+*.sqlite
+*.db   
